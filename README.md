@@ -10,9 +10,3 @@ Efficient production planning for Satisfactory: Minimize power, machines, and co
 # A bit more complex example: Computer x1
 
 ![Alt text](images-for-readme/Computer_x1_v2Best0.png?raw=true "PlantUML output - Computer x1")
-
-
-
-# A bit more complex example: Computer x1
-
-![Alt text](images-for-readme/Computer_x1_v2Best0.png "PlantUML output - Computer x1")
