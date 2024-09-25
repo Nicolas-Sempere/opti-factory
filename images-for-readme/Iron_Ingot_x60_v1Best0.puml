@@ -1,0 +1,47 @@
+@startuml
+skinparam textalign center
+left to right direction
+<style>
+card {BackgroundColor cyan}
+usecase {BackgroundColor orange}
+node {BackgroundColor palegreen}
+storage {BackgroundColor green}
+</style>
+usecase 8 as "Foundry
+--
+ Nombre : 1.2
+--
+ Puissance : 19.2 W
+--
+ Dico Index : ('Iron Ingot', 1)"
+card 9 as "Iron Ore"
+card 12 as "Copper Ore"
+usecase 10 as "Miner Mk.2
+--
+ Nombre : 0.2
+--
+ Puissance : 2.4 W
+--
+ Dico Index : ('Iron Ore', 0)"
+node 11 as "Iron Mine"
+usecase 13 as "Miner Mk.2
+--
+ Nombre : 0.2
+--
+ Puissance : 2.4 W
+--
+ Dico Index : ('Copper Ore', 0)"
+node 14 as "Copper Mine"
+card 0 as "Iron Ingot"
+9-->8 : 24.0
+12-->8 : 24.0
+10-->9
+13-->12
+11-->10 : 0.2
+14-->13 : 0.2
+8-->0 : 60
+legend
+Number of machines : 1.6
+Power required : 24.0 W
+endlegend
+@enduml

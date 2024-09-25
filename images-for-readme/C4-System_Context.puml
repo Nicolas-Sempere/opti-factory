@@ -1,0 +1,22 @@
+@startuml
+!define C4Context
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Context.puml
+
+title Opti-Factory - C4 System Context Diagram
+
+' OptiFactory system as the core
+System(optifactory, "Opti-Factory", "System to optimize production plans for the game Satisfactory")
+
+' External entities
+Person(user, "User", "Player of Satisfactory")
+System_Ext(satisfactoryGame, "Satisfactory Game", "The source of production data")
+System_Ext(plantUML, "PlantUML", "Generates diagrams from the optimization results")
+System_Ext(python, "Python", "Computes optimized production plans")
+
+' Relationships
+Rel(user, optifactory, "Inputs production plans and receives optimized results")
+Rel(optifactory, satisfactoryGame, "Uses production data from")
+Rel(optifactory, plantUML, "Uses to generate production flow diagrams")
+Rel(optifactory, python, "Uses to compute optimized production plans")
+
+@enduml

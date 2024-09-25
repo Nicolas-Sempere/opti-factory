@@ -1,0 +1,192 @@
+@startuml
+skinparam textalign center
+left to right direction
+<style>
+card {BackgroundColor cyan}
+usecase {BackgroundColor orange}
+node {BackgroundColor palegreen}
+storage {BackgroundColor green}
+</style>
+usecase 69 as "Assembler
+--
+ Nombre : 0.36
+--
+ Puissance : 5.33 W"
+card 70 as "Circuit Board"
+card 104 as "Crystal Oscillator"
+usecase 71 as "Assembler
+--
+ Nombre : 0.21
+--
+ Puissance : 3.2 W"
+card 72 as "Copper Sheet"
+card 82 as "Silica"
+usecase 73 as "Constructor
+--
+ Nombre : 0.59
+--
+ Puissance : 2.35 W"
+card 74 as "Copper Ingot"
+usecase 83 as "Constructor
+--
+ Nombre : 0.16
+--
+ Puissance : 0.63 W"
+card 84 as "Raw Quartz"
+usecase 105 as "Manufacturer
+--
+ Nombre : 1.0
+--
+ Puissance : 55.0 W"
+card 106 as "Quartz Crystal"
+card 111 as "Cable"
+card 128 as "Reinforced Iron Plat"
+usecase 107 as "Constructor
+--
+ Nombre : 0.8
+--
+ Puissance : 3.2 W"
+card 108 as "Raw Quartz"
+usecase 109 as "Miner Mk.2
+--
+ Nombre : 0.28
+--
+ Puissance : 3.35 W"
+node 110 as "Quartz Mine"
+usecase 112 as "Constructor
+--
+ Nombre : 0.47
+--
+ Puissance : 1.87 W"
+card 113 as "Wire"
+usecase 116 as "Foundry
+--
+ Nombre : 0.18
+--
+ Puissance : 2.83 W"
+card 117 as "Copper Ore"
+card 120 as "Iron Ore"
+usecase 118 as "Miner Mk.2
+--
+ Nombre : 0.09
+--
+ Puissance : 1.11 W"
+node 119 as "Copper Mine"
+usecase 121 as "Miner Mk.2
+--
+ Nombre : 0.06
+--
+ Puissance : 0.66 W"
+node 122 as "Iron Mine"
+usecase 129 as "Assembler
+--
+ Nombre : 0.44
+--
+ Puissance : 6.67 W"
+card 130 as "Iron Plate"
+card 146 as "Wire"
+usecase 131 as "Assembler
+--
+ Nombre : 0.11
+--
+ Puissance : 1.67 W"
+card 132 as "Iron Ingot"
+card 140 as "Plastic"
+usecase 133 as "Foundry
+--
+ Nombre : 0.11
+--
+ Puissance : 1.78 W"
+card 134 as "Iron Ore"
+card 137 as "Copper Ore"
+usecase 141 as "Refinery
+--
+ Nombre : 0.06
+--
+ Puissance : 1.67 W"
+storage 142 as "Heavy Oil Residue"
+card 143 as "Crude Oil"
+usecase 144 as "Oil Extractor
+--
+ Nombre : 0.01
+--
+ Puissance : 0.56 W"
+node 145 as "Oil Pool"
+usecase 147 as "Assembler
+--
+ Nombre : 0.5
+--
+ Puissance : 7.44 W"
+card 148 as "Copper Ingot"
+card 156 as "Caterium Ingot"
+usecase 157 as "Smelter
+--
+ Nombre : 0.1
+--
+ Puissance : 0.4 W"
+card 158 as "Caterium Ore"
+usecase 159 as "Miner Mk.2
+--
+ Nombre : 0.04
+--
+ Puissance : 0.45 W"
+node 160 as "Caterium Mine"
+card 0 as "Computer"
+70-->69 : 2.67
+104-->69 : 1.0
+71-->70
+105-->104
+72-->71 : 5.87
+82-->71 : 5.87
+73-->72
+83-->82
+74-->73 : 11.73
+116-->74
+84-->83 : 3.52
+109-->84
+106-->105 : 18.0
+111-->105 : 14.0
+128-->105 : 2.5
+107-->106
+112-->111
+129-->128
+108-->107 : 30.0
+109-->108
+110-->109 : 0.28
+113-->112 : 28.0
+147-->113
+117-->116 : 8.84
+120-->116 : 4.42
+118-->117
+121-->120
+119-->118 : 0.09
+122-->121 : 0.06
+130-->129 : 8.33
+146-->129 : 16.67
+131-->130
+147-->146
+132-->131 : 5.56
+140-->131 : 1.11
+133-->132
+141-->140
+134-->133 : 2.22
+137-->133 : 2.22
+121-->134
+118-->137
+141-->142 : 0.56
+143-->141 : 1.67
+144-->143
+145-->144 : 0.01
+148-->147 : 5.96
+156-->147 : 1.49
+116-->148
+157-->156
+158-->157 : 4.47
+159-->158
+160-->159 : 0.04
+69-->0 : 1
+legend
+Number of machines : 5.55
+Power required : 100.15 W
+endlegend
+@enduml
