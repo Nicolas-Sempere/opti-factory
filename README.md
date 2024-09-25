@@ -3,11 +3,9 @@
 
 ## General Overview
 
-<center>
-<img src="images-for-readme/C4-System_Context.svg?raw=true" alt="drawing" width="600"/>
-
-<u>Overview of Opti-Factory</u>
-</center>
+<p align="center">
+<img src="images-for-readme/C4-System_Context.svg?raw=true" alt="drawing" width="600"/></p>
+<p align="center"><u>Overview of Opti-Factory</u></p>
 
 
 ## How to use
@@ -41,11 +39,9 @@ The output of the code is in `production-lines`.
 
 ### Simple example: Iron Ingot x60
 
-<center>
-<img src="images-for-readme/Iron_Ingot_x60_v1Best0.svg?raw=true" alt="drawing"/>
-
-<u>Production line - Iron Ingot (60/min)</u>
-</center>
+<p align="center">
+<img src="images-for-readme/Iron_Ingot_x60_v1Best0.svg?raw=true" alt="drawing"/></p>
+<p align="center"><u>Production line - Iron Ingot (60/min)</u></p>
 
 
 
@@ -53,10 +49,9 @@ The output of the code is in `production-lines`.
 ### A bit more complex example: Computer x1
 
 
-<center>
-<img src="images-for-readme/Computer_x1_v2Best0.svg?raw=true" alt="drawing"/>
+<p align="center">
+<img src="images-for-readme/Computer_x1_v2Best0.svg?raw=true" alt="drawing"/></p>
+<p align="center"><u>Production line - Computer (1/min)</u></p>
 
-<u>Production line - Computer (1/min)</u>
-</center>
 
 
