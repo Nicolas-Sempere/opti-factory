@@ -5,18 +5,18 @@
 title Opti-Factory - C4 System Context Diagram
 
 ' OptiFactory system as the core
-System(optifactory, "Opti-Factory", "System to optimize production plans for the game Satisfactory")
+System(optifactory, "Opti-Factory", "System to optimize production lines for the game Satisfactory")
 
 ' External entities
 Person(user, "User", "Player of Satisfactory")
 System_Ext(satisfactoryGame, "Satisfactory Game", "The source of production data")
-System_Ext(plantUML, "PlantUML", "Generates diagrams from the optimization results")
-System_Ext(python, "Python", "Computes optimized production plans")
+System_Ext(plantUML, "PlantUML", "Generates visual representation of production lines")
+System_Ext(python, "Python", "Computes optimized production lines")
 
 ' Relationships
-Rel(user, optifactory, "Inputs production plans and receives optimized results")
+Rel(user, optifactory, "Inputs production plans and receives optimized production lines")
 Rel(optifactory, satisfactoryGame, "Uses production data from")
-Rel(optifactory, plantUML, "Uses to generate production flow diagrams")
-Rel(optifactory, python, "Uses to compute optimized production plans")
+Rel(optifactory, plantUML, "Uses to generate visual representation of production lines")
+Rel(optifactory, python, "Uses to compute optimized production lines")
 
 @enduml
