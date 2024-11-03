@@ -1,0 +1,14 @@
+!include Style/colors.iuml
+
+skinparam defaultTextColor white
+skinparam backgroundColor $colors.grey
+
+skinparam titleFontColor white
+skinparam titleFontSize 20
+
+UpdateElementStyle("person", $bgColor=$colors.green, $fontColor=black, $borderColor=$colors.green, $shadowing="true", $legendText="Person")
+UpdateElementStyle("system", $bgColor=$colors.orange, $fontColor=black, $borderColor=$colors.orange, $legendText="Opti-Factory system")
+UpdateElementStyle("external_system", $bgColor=$colors.blue, $fontColor=black, $borderColor=$colors.blue, $legendText="External system")
+UpdateElementStyle("container", $bgColor=$colors.orange, $fontColor=black, $borderColor=$colors.orange, $legendText="Container")
+UpdateElementStyle("system_boundary", $fontColor=$colors.light_orange, $borderColor=$colors.light_orange, $legendText="System Boundary")
+UpdateRelStyle($lineColor=white, $textColor=white)

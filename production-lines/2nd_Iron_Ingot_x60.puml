@@ -1,0 +1,18 @@
+@startuml
+!include ../graphic-charter/opti_factory_style.iuml
+usecase 15 as "2.0 Smelter
+(8.0 W)"
+card 16 as "Iron Ore"
+usecase 17 as "0.5 Miner Mk.2
+(6.0 W)"
+node 18 as "Iron Mine"
+card 0 as "Iron Ingot"
+16-->15: 60.0
+17-->16
+18-->17: 0.5
+15-->0: 60
+legend
+Total Number of Machines: 2.5
+Total Power required: 14.0 W
+endlegend
+@enduml

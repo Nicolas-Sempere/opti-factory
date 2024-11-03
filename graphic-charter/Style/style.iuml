@@ -1,0 +1,31 @@
+skinparam textalign center
+left to right direction
+
+skinparam backgroundColor $colors.grey
+skinparam defaultTextColor white
+skinparam classBackgroundColor white
+skinparam componentBackgroundColor white
+skinparam ArrowColor white
+
+<style>
+root {
+  FontColor white
+  FontSize 20
+}
+card {
+  BackgroundColor $colors.blue
+  LineColor $colors.blue
+  }
+usecase {
+  BackgroundColor $colors.orange
+  LineColor $colors.orange
+  }
+node {
+  BackgroundColor $colors.green
+  LineColor $colors.green
+}
+storage {
+  BackgroundColor $colors.purple
+  LineColor $colors.purple
+}
+</style>

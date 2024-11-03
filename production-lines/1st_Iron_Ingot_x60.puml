@@ -1,0 +1,25 @@
+@startuml
+!include ../graphic-charter/opti_factory_style.iuml
+usecase 8 as "1.2 Foundry
+(19.2 W)"
+card 9 as "Iron Ore"
+card 12 as "Copper Ore"
+usecase 10 as "0.2 Miner Mk.2
+(2.4 W)"
+node 11 as "Iron Mine"
+usecase 13 as "0.2 Miner Mk.2
+(2.4 W)"
+node 14 as "Copper Mine"
+card 0 as "Iron Ingot"
+9-->8: 24.0
+12-->8: 24.0
+10-->9
+13-->12
+11-->10: 0.2
+14-->13: 0.2
+8-->0: 60
+legend
+Total Number of Machines: 1.6
+Total Power required: 24.0 W
+endlegend
+@enduml

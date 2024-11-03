@@ -1,0 +1,29 @@
+@startuml
+!define C4Container
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
+!include ../graphic-charter/c4_style.iuml
+
+title Opti-Factory - C4 Container Diagram
+
+' External systems and containers
+Person(user, "User", "Player of Satisfactory, configures and views optimized production lines")
+System_Ext(satisfactoryGame, "Satisfactory Game", "Source of production data")
+System_Ext(plantUML, "PlantUML", "Generates visual representations of production lines (PNG, SVG, PDF)")
+
+System_Boundary(optifactory_boundary, "Opti-Factory") {
+    ContainerDb(data_storage, "Data Storage", "Dictionary and Files", "Stores available recipes and user configuration")
+    Container(python_optimizer, "Python Optimization Engine", "Python", "Calculates optimal production lines and prepares PlantUML files")
+    Container(visual_output, "Visual Output", "Folder", "Stores the generated production line diagrams")
+}
+
+' Relationships
+Rel(user, data_storage, "Inputs target product, target speed, and configuration into")
+Rel_Up(satisfactoryGame, data_storage, "Provides raw production data")
+Rel_R(data_storage, python_optimizer, "Gives recipes and user configuration to")
+Rel(python_optimizer, plantUML, "Converts PlantUML files to diagrams using")
+Rel(plantUML, visual_output, "Generates and saves diagrams to")
+Rel(user, visual_output, "Views the optimized production lines diagrams from")
+
+SHOW_LEGEND()
+
+@enduml

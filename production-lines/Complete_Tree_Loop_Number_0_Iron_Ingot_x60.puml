@@ -1,0 +1,60 @@
+@startuml
+skinparam DefaultFontSize 16
+!include ../graphic-charter/opti_factory_style.iuml
+card 0 as "Iron Ingot"
+usecase 1 as "Refinery
+--
+<color $colors.yellow> Dico Index: ('Iron Ingot', 0)</color>"
+card 2 as "Iron Ore"
+usecase 3 as "Miner Mk.2
+--
+<color $colors.yellow> Dico Index: ('Iron Ore', 0)</color>"
+node 4 as "Iron Mine"
+card 5 as "Water"
+usecase 6 as "Water Extractor
+--
+<color $colors.yellow> Dico Index: ('Water', 0)</color>"
+node 7 as "Water Pool"
+usecase 8 as "Foundry
+--
+<color $colors.yellow> Dico Index: ('Iron Ingot', 1)</color>"
+card 9 as "Iron Ore"
+usecase 10 as "Miner Mk.2
+--
+<color $colors.yellow> Dico Index: ('Iron Ore', 0)</color>"
+node 11 as "Iron Mine"
+card 12 as "Copper Ore"
+usecase 13 as "Miner Mk.2
+--
+<color $colors.yellow> Dico Index: ('Copper Ore', 0)</color>"
+node 14 as "Copper Mine"
+usecase 15 as "Smelter
+--
+<color $colors.yellow> Dico Index: ('Iron Ingot', 2)</color>"
+card 16 as "Iron Ore"
+usecase 17 as "Miner Mk.2
+--
+<color $colors.yellow> Dico Index: ('Iron Ore', 0)</color>"
+node 18 as "Iron Mine"
+1-->0: 60
+8-->0: 60
+15-->0: 60
+2-->1: 32.31
+5-->1: 18.46
+3-->2
+4-->3: 0.27
+6-->5
+7-->6: 0.15
+9-->8: 24.0
+12-->8: 24.0
+10-->9
+11-->10: 0.2
+13-->12
+14-->13: 0.2
+16-->15: 60.0
+17-->16
+18-->17: 0.5
+legend
+Number of possibilities: 3
+endlegend
+@enduml

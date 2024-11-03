@@ -1,0 +1,107 @@
+@startuml
+!include ../graphic-charter/opti_factory_style.iuml
+usecase 1 as "0.4 Manufacturer
+(22.0 W)"
+card 2 as "Circuit Board"
+card 19 as "Cable"
+card 36 as "Plastic"
+card 42 as "Screw"
+usecase 3 as "0.8 Assembler
+(12.0 W)"
+card 4 as "Copper Sheet"
+card 14 as "Silica"
+usecase 5 as "2.2 Constructor
+(8.8 W)"
+card 6 as "Copper Ingot"
+usecase 15 as "0.59 Constructor
+(2.35 W)"
+card 16 as "Raw Quartz"
+usecase 17 as "0.11 Miner Mk.2
+(1.32 W)"
+node 18 as "Quartz Mine"
+usecase 20 as "0.3 Constructor
+(1.2 W)"
+card 21 as "Wire"
+usecase 22 as "0.2 Assembler
+(3.0 W)"
+card 23 as "Copper Ingot"
+card 31 as "Caterium Ingot"
+usecase 24 as "0.46 Foundry
+(7.42 W)"
+card 25 as "Copper Ore"
+card 28 as "Iron Ore"
+usecase 26 as "0.24 Miner Mk.2
+(2.84 W)"
+node 27 as "Copper Mine"
+usecase 29 as "0.14 Miner Mk.2
+(1.68 W)"
+node 30 as "Iron Mine"
+usecase 32 as "0.04 Smelter
+(0.16 W)"
+card 33 as "Caterium Ore"
+usecase 34 as "0.02 Miner Mk.2
+(0.18 W)"
+node 35 as "Caterium Mine"
+usecase 37 as "0.9 Refinery
+(27.0 W)"
+storage 38 as "Heavy Oil Residue"
+card 39 as "Crude Oil"
+usecase 40 as "0.23 Oil Extractor
+(9.0 W)"
+node 41 as "Oil Pool"
+usecase 43 as "1.04 Constructor
+(4.16 W)"
+card 44 as "Iron Ingot"
+usecase 45 as "0.26 Foundry
+(4.16 W)"
+card 46 as "Iron Ore"
+card 49 as "Copper Ore"
+card 0 as "Computer"
+2-->1: 10.0
+19-->1: 9.0
+36-->1: 18.0
+42-->1: 52.0
+3-->2
+20-->19
+37-->36
+43-->42
+4-->3: 22.0
+14-->3: 22.0
+5-->4
+15-->14
+6-->5: 44.0
+24-->6
+16-->15: 13.2
+17-->16
+18-->17: 0.11
+21-->20: 18.0
+22-->21
+23-->22: 2.4
+31-->22: 0.6
+24-->23
+32-->31
+25-->24: 23.2
+28-->24: 11.6
+26-->25
+29-->28
+27-->26: 0.24
+30-->29: 0.14
+33-->32: 1.8
+34-->33
+35-->34: 0.02
+37-->38: 9.0
+39-->37: 27.0
+40-->39
+41-->40: 0.23
+44-->43: 13.0
+45-->44
+46-->45: 5.2
+49-->45: 5.2
+29-->46
+26-->49
+1-->0: 1
+legend
+Total Number of Machines: 7.92
+Total Power required: 107.27 W
+endlegend
+@enduml

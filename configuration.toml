@@ -1,0 +1,37 @@
+[Production Plan]
+target_product = "Iron Ingot"
+target_speed = 60
+
+target_product = "Computer"
+target_speed = 1
+
+# Given a product that has n recipes, 
+# at the last step of the bottom-up algorithm, there are only n possible lines left.
+# By default, only the best one is saved (number_of_production_lines = 1).
+# It is thus possible to save as many best lines as wanted (number_of_production_lines between 1 and n)
+number_of_production_lines = 10
+
+
+
+[Parameters]
+# Log information is written to the console
+log = true
+
+# The maximum number of loops in the bottom-up algorithm (guarantees termination)
+max_number_of_loops = 100
+
+
+
+[/!\ Fun - Danger - Debug Zone /!\]
+# At each step of the bottom-up algorithm, saves the complete tree with all the recipes left
+# An objective product can be made using a lot of different sets of recipes
+# The complete tree represents all (or at least a lot of) these possibilities
+save_complete_trees = true
+
+# Saves a scatter plot showing the different production lines score,
+# at the last step of the bottom-up algorithm
+save_recipes_scores = true
+
+# Computes the best production line for every product
+# that is present in Recipes_Dictionary (in gameData/RecipesDictionary.py)
+compute_all_best_trees = false

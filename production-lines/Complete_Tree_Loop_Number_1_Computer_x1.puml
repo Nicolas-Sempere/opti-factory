@@ -1,0 +1,928 @@
+@startuml
+skinparam DefaultFontSize 16
+!include ../graphic-charter/opti_factory_style.iuml
+card 0 as "Computer"
+usecase 1 as "Manufacturer
+--
+<color $colors.yellow> Dico Index: ('Computer', 0)</color>"
+card 2 as "Circuit Board"
+usecase 3 as "Assembler
+--
+<color $colors.yellow> Dico Index: ('Circuit Board', 0)</color>"
+card 4 as "Copper Sheet"
+usecase 5 as "Refinery
+--
+<color $colors.yellow> Dico Index: ('Copper Sheet', 0)</color>"
+card 6 as "Copper Ingot"
+usecase 7 as "Foundry
+--
+<color $colors.yellow> Dico Index: ('Copper Ingot', 0)</color>"
+card 8 as "Copper Ore"
+usecase 9 as "Miner Mk.2
+--
+<color $colors.yellow> Dico Index: ('Copper Ore', 0)</color>"
+node 10 as "Copper Mine"
+card 11 as "Iron Ore"
+usecase 12 as "Miner Mk.2
+--
+<color $colors.yellow> Dico Index: ('Iron Ore', 0)</color>"
+node 13 as "Iron Mine"
+card 14 as "Water"
+usecase 15 as "Water Extractor
+--
+<color $colors.yellow> Dico Index: ('Water', 0)</color>"
+node 16 as "Water Pool"
+usecase 17 as "Constructor
+--
+<color $colors.yellow> Dico Index: ('Copper Sheet', 1)</color>"
+card 18 as "Copper Ingot"
+usecase 19 as "Foundry
+--
+<color $colors.yellow> Dico Index: ('Copper Ingot', 0)</color>"
+card 20 as "Copper Ore"
+usecase 21 as "Miner Mk.2
+--
+<color $colors.yellow> Dico Index: ('Copper Ore', 0)</color>"
+node 22 as "Copper Mine"
+card 23 as "Iron Ore"
+usecase 24 as "Miner Mk.2
+--
+<color $colors.yellow> Dico Index: ('Iron Ore', 0)</color>"
+node 25 as "Iron Mine"
+card 26 as "Silica"
+usecase 27 as "Constructor
+--
+<color $colors.yellow> Dico Index: ('Silica', 0)</color>"
+card 28 as "Raw Quartz"
+usecase 29 as "Miner Mk.2
+--
+<color $colors.yellow> Dico Index: ('Raw Quartz', 0)</color>"
+node 30 as "Quartz Mine"
+usecase 31 as "Assembler
+--
+<color $colors.yellow> Dico Index: ('Circuit Board', 1)</color>"
+card 32 as "Copper Sheet"
+usecase 33 as "Refinery
+--
+<color $colors.yellow> Dico Index: ('Copper Sheet', 0)</color>"
+card 34 as "Copper Ingot"
+usecase 35 as "Foundry
+--
+<color $colors.yellow> Dico Index: ('Copper Ingot', 0)</color>"
+card 36 as "Copper Ore"
+usecase 37 as "Miner Mk.2
+--
+<color $colors.yellow> Dico Index: ('Copper Ore', 0)</color>"
+node 38 as "Copper Mine"
+card 39 as "Iron Ore"
+usecase 40 as "Miner Mk.2
+--
+<color $colors.yellow> Dico Index: ('Iron Ore', 0)</color>"
+node 41 as "Iron Mine"
+card 42 as "Water"
+usecase 43 as "Water Extractor
+--
+<color $colors.yellow> Dico Index: ('Water', 0)</color>"
+node 44 as "Water Pool"
+usecase 45 as "Constructor
+--
+<color $colors.yellow> Dico Index: ('Copper Sheet', 1)</color>"
+card 46 as "Copper Ingot"
+usecase 47 as "Foundry
+--
+<color $colors.yellow> Dico Index: ('Copper Ingot', 0)</color>"
+card 48 as "Copper Ore"
+usecase 49 as "Miner Mk.2
+--
+<color $colors.yellow> Dico Index: ('Copper Ore', 0)</color>"
+node 50 as "Copper Mine"
+card 51 as "Iron Ore"
+usecase 52 as "Miner Mk.2
+--
+<color $colors.yellow> Dico Index: ('Iron Ore', 0)</color>"
+node 53 as "Iron Mine"
+card 54 as "Plastic"
+usecase 55 as "Refinery
+--
+<color $colors.yellow> Dico Index: ('Plastic', 0)</color>"
+storage 56 as "Heavy Oil Residue"
+card 57 as "Crude Oil"
+usecase 58 as "Oil Extractor
+--
+<color $colors.yellow> Dico Index: ('Crude Oil', 0)</color>"
+node 59 as "Oil Pool"
+card 60 as "Cable"
+usecase 61 as "Constructor
+--
+<color $colors.yellow> Dico Index: ('Cable', 0)</color>"
+card 62 as "Wire"
+usecase 63 as "Assembler
+--
+<color $colors.yellow> Dico Index: ('Wire', 0)</color>"
+card 64 as "Copper Ingot"
+usecase 65 as "Foundry
+--
+<color $colors.yellow> Dico Index: ('Copper Ingot', 0)</color>"
+card 66 as "Copper Ore"
+usecase 67 as "Miner Mk.2
+--
+<color $colors.yellow> Dico Index: ('Copper Ore', 0)</color>"
+node 68 as "Copper Mine"
+card 69 as "Iron Ore"
+usecase 70 as "Miner Mk.2
+--
+<color $colors.yellow> Dico Index: ('Iron Ore', 0)</color>"
+node 71 as "Iron Mine"
+card 72 as "Caterium Ingot"
+usecase 73 as "Smelter
+--
+<color $colors.yellow> Dico Index: ('Caterium Ingot', 0)</color>"
+card 74 as "Caterium Ore"
+usecase 75 as "Miner Mk.2
+--
+<color $colors.yellow> Dico Index: ('Caterium Ore', 0)</color>"
+node 76 as "Caterium Mine"
+usecase 77 as "Constructor
+--
+<color $colors.yellow> Dico Index: ('Wire', 1)</color>"
+card 78 as "Copper Ingot"
+usecase 79 as "Foundry
+--
+<color $colors.yellow> Dico Index: ('Copper Ingot', 0)</color>"
+card 80 as "Copper Ore"
+usecase 81 as "Miner Mk.2
+--
+<color $colors.yellow> Dico Index: ('Copper Ore', 0)</color>"
+node 82 as "Copper Mine"
+card 83 as "Iron Ore"
+usecase 84 as "Miner Mk.2
+--
+<color $colors.yellow> Dico Index: ('Iron Ore', 0)</color>"
+node 85 as "Iron Mine"
+card 86 as "Plastic"
+usecase 87 as "Refinery
+--
+<color $colors.yellow> Dico Index: ('Plastic', 0)</color>"
+storage 88 as "Heavy Oil Residue"
+card 89 as "Crude Oil"
+usecase 90 as "Oil Extractor
+--
+<color $colors.yellow> Dico Index: ('Crude Oil', 0)</color>"
+node 91 as "Oil Pool"
+card 92 as "Screw"
+usecase 93 as "Constructor
+--
+<color $colors.yellow> Dico Index: ('Screw', 0)</color>"
+card 94 as "Iron Ingot"
+usecase 95 as "Foundry
+--
+<color $colors.yellow> Dico Index: ('Iron Ingot', 1)</color>"
+card 96 as "Iron Ore"
+usecase 97 as "Miner Mk.2
+--
+<color $colors.yellow> Dico Index: ('Iron Ore', 0)</color>"
+node 98 as "Iron Mine"
+card 99 as "Copper Ore"
+usecase 100 as "Miner Mk.2
+--
+<color $colors.yellow> Dico Index: ('Copper Ore', 0)</color>"
+node 101 as "Copper Mine"
+usecase 102 as "Constructor
+--
+<color $colors.yellow> Dico Index: ('Screw', 1)</color>"
+card 103 as "Iron Rod"
+usecase 104 as "Constructor
+--
+<color $colors.yellow> Dico Index: ('Iron Rod', 0)</color>"
+card 105 as "Iron Ingot"
+usecase 106 as "Foundry
+--
+<color $colors.yellow> Dico Index: ('Iron Ingot', 1)</color>"
+card 107 as "Iron Ore"
+usecase 108 as "Miner Mk.2
+--
+<color $colors.yellow> Dico Index: ('Iron Ore', 0)</color>"
+node 109 as "Iron Mine"
+card 110 as "Copper Ore"
+usecase 111 as "Miner Mk.2
+--
+<color $colors.yellow> Dico Index: ('Copper Ore', 0)</color>"
+node 112 as "Copper Mine"
+usecase 113 as "Assembler
+--
+<color $colors.yellow> Dico Index: ('Computer', 1)</color>"
+card 114 as "Circuit Board"
+usecase 115 as "Assembler
+--
+<color $colors.yellow> Dico Index: ('Circuit Board', 0)</color>"
+card 116 as "Copper Sheet"
+usecase 117 as "Refinery
+--
+<color $colors.yellow> Dico Index: ('Copper Sheet', 0)</color>"
+card 118 as "Copper Ingot"
+usecase 119 as "Foundry
+--
+<color $colors.yellow> Dico Index: ('Copper Ingot', 0)</color>"
+card 120 as "Copper Ore"
+usecase 121 as "Miner Mk.2
+--
+<color $colors.yellow> Dico Index: ('Copper Ore', 0)</color>"
+node 122 as "Copper Mine"
+card 123 as "Iron Ore"
+usecase 124 as "Miner Mk.2
+--
+<color $colors.yellow> Dico Index: ('Iron Ore', 0)</color>"
+node 125 as "Iron Mine"
+card 126 as "Water"
+usecase 127 as "Water Extractor
+--
+<color $colors.yellow> Dico Index: ('Water', 0)</color>"
+node 128 as "Water Pool"
+usecase 129 as "Constructor
+--
+<color $colors.yellow> Dico Index: ('Copper Sheet', 1)</color>"
+card 130 as "Copper Ingot"
+usecase 131 as "Foundry
+--
+<color $colors.yellow> Dico Index: ('Copper Ingot', 0)</color>"
+card 132 as "Copper Ore"
+usecase 133 as "Miner Mk.2
+--
+<color $colors.yellow> Dico Index: ('Copper Ore', 0)</color>"
+node 134 as "Copper Mine"
+card 135 as "Iron Ore"
+usecase 136 as "Miner Mk.2
+--
+<color $colors.yellow> Dico Index: ('Iron Ore', 0)</color>"
+node 137 as "Iron Mine"
+card 138 as "Silica"
+usecase 139 as "Constructor
+--
+<color $colors.yellow> Dico Index: ('Silica', 0)</color>"
+card 140 as "Raw Quartz"
+usecase 141 as "Miner Mk.2
+--
+<color $colors.yellow> Dico Index: ('Raw Quartz', 0)</color>"
+node 142 as "Quartz Mine"
+usecase 143 as "Assembler
+--
+<color $colors.yellow> Dico Index: ('Circuit Board', 1)</color>"
+card 144 as "Copper Sheet"
+usecase 145 as "Refinery
+--
+<color $colors.yellow> Dico Index: ('Copper Sheet', 0)</color>"
+card 146 as "Copper Ingot"
+usecase 147 as "Foundry
+--
+<color $colors.yellow> Dico Index: ('Copper Ingot', 0)</color>"
+card 148 as "Copper Ore"
+usecase 149 as "Miner Mk.2
+--
+<color $colors.yellow> Dico Index: ('Copper Ore', 0)</color>"
+node 150 as "Copper Mine"
+card 151 as "Iron Ore"
+usecase 152 as "Miner Mk.2
+--
+<color $colors.yellow> Dico Index: ('Iron Ore', 0)</color>"
+node 153 as "Iron Mine"
+card 154 as "Water"
+usecase 155 as "Water Extractor
+--
+<color $colors.yellow> Dico Index: ('Water', 0)</color>"
+node 156 as "Water Pool"
+usecase 157 as "Constructor
+--
+<color $colors.yellow> Dico Index: ('Copper Sheet', 1)</color>"
+card 158 as "Copper Ingot"
+usecase 159 as "Foundry
+--
+<color $colors.yellow> Dico Index: ('Copper Ingot', 0)</color>"
+card 160 as "Copper Ore"
+usecase 161 as "Miner Mk.2
+--
+<color $colors.yellow> Dico Index: ('Copper Ore', 0)</color>"
+node 162 as "Copper Mine"
+card 163 as "Iron Ore"
+usecase 164 as "Miner Mk.2
+--
+<color $colors.yellow> Dico Index: ('Iron Ore', 0)</color>"
+node 165 as "Iron Mine"
+card 166 as "Plastic"
+usecase 167 as "Refinery
+--
+<color $colors.yellow> Dico Index: ('Plastic', 0)</color>"
+storage 168 as "Heavy Oil Residue"
+card 169 as "Crude Oil"
+usecase 170 as "Oil Extractor
+--
+<color $colors.yellow> Dico Index: ('Crude Oil', 0)</color>"
+node 171 as "Oil Pool"
+card 172 as "Crystal Oscillator"
+usecase 173 as "Manufacturer
+--
+<color $colors.yellow> Dico Index: ('Crystal Oscillator', 0)</color>"
+card 174 as "Quartz Crystal"
+usecase 175 as "Constructor
+--
+<color $colors.yellow> Dico Index: ('Quartz Crystal', 1)</color>"
+card 176 as "Raw Quartz"
+usecase 177 as "Miner Mk.2
+--
+<color $colors.yellow> Dico Index: ('Raw Quartz', 0)</color>"
+node 178 as "Quartz Mine"
+card 179 as "Cable"
+usecase 180 as "Constructor
+--
+<color $colors.yellow> Dico Index: ('Cable', 0)</color>"
+card 181 as "Wire"
+usecase 182 as "Assembler
+--
+<color $colors.yellow> Dico Index: ('Wire', 0)</color>"
+card 183 as "Copper Ingot"
+usecase 184 as "Foundry
+--
+<color $colors.yellow> Dico Index: ('Copper Ingot', 0)</color>"
+card 185 as "Copper Ore"
+usecase 186 as "Miner Mk.2
+--
+<color $colors.yellow> Dico Index: ('Copper Ore', 0)</color>"
+node 187 as "Copper Mine"
+card 188 as "Iron Ore"
+usecase 189 as "Miner Mk.2
+--
+<color $colors.yellow> Dico Index: ('Iron Ore', 0)</color>"
+node 190 as "Iron Mine"
+card 191 as "Caterium Ingot"
+usecase 192 as "Smelter
+--
+<color $colors.yellow> Dico Index: ('Caterium Ingot', 0)</color>"
+card 193 as "Caterium Ore"
+usecase 194 as "Miner Mk.2
+--
+<color $colors.yellow> Dico Index: ('Caterium Ore', 0)</color>"
+node 195 as "Caterium Mine"
+usecase 196 as "Constructor
+--
+<color $colors.yellow> Dico Index: ('Wire', 1)</color>"
+card 197 as "Copper Ingot"
+usecase 198 as "Foundry
+--
+<color $colors.yellow> Dico Index: ('Copper Ingot', 0)</color>"
+card 199 as "Copper Ore"
+usecase 200 as "Miner Mk.2
+--
+<color $colors.yellow> Dico Index: ('Copper Ore', 0)</color>"
+node 201 as "Copper Mine"
+card 202 as "Iron Ore"
+usecase 203 as "Miner Mk.2
+--
+<color $colors.yellow> Dico Index: ('Iron Ore', 0)</color>"
+node 204 as "Iron Mine"
+card 205 as "Reinforced Iron Plat"
+usecase 206 as "Assembler
+--
+<color $colors.yellow> Dico Index: ('Reinforced Iron Plate', 0)</color>"
+card 207 as "Iron Plate"
+usecase 208 as "Assembler
+--
+<color $colors.yellow> Dico Index: ('Iron Plate', 0)</color>"
+card 209 as "Iron Ingot"
+usecase 210 as "Foundry
+--
+<color $colors.yellow> Dico Index: ('Iron Ingot', 1)</color>"
+card 211 as "Iron Ore"
+usecase 212 as "Miner Mk.2
+--
+<color $colors.yellow> Dico Index: ('Iron Ore', 0)</color>"
+node 213 as "Iron Mine"
+card 214 as "Copper Ore"
+usecase 215 as "Miner Mk.2
+--
+<color $colors.yellow> Dico Index: ('Copper Ore', 0)</color>"
+node 216 as "Copper Mine"
+card 217 as "Plastic"
+usecase 218 as "Refinery
+--
+<color $colors.yellow> Dico Index: ('Plastic', 0)</color>"
+storage 219 as "Heavy Oil Residue"
+card 220 as "Crude Oil"
+usecase 221 as "Oil Extractor
+--
+<color $colors.yellow> Dico Index: ('Crude Oil', 0)</color>"
+node 222 as "Oil Pool"
+card 223 as "Screw"
+usecase 224 as "Constructor
+--
+<color $colors.yellow> Dico Index: ('Screw', 0)</color>"
+card 225 as "Iron Ingot"
+usecase 226 as "Foundry
+--
+<color $colors.yellow> Dico Index: ('Iron Ingot', 1)</color>"
+card 227 as "Iron Ore"
+usecase 228 as "Miner Mk.2
+--
+<color $colors.yellow> Dico Index: ('Iron Ore', 0)</color>"
+node 229 as "Iron Mine"
+card 230 as "Copper Ore"
+usecase 231 as "Miner Mk.2
+--
+<color $colors.yellow> Dico Index: ('Copper Ore', 0)</color>"
+node 232 as "Copper Mine"
+usecase 233 as "Constructor
+--
+<color $colors.yellow> Dico Index: ('Screw', 1)</color>"
+card 234 as "Iron Rod"
+usecase 235 as "Constructor
+--
+<color $colors.yellow> Dico Index: ('Iron Rod', 0)</color>"
+card 236 as "Iron Ingot"
+usecase 237 as "Foundry
+--
+<color $colors.yellow> Dico Index: ('Iron Ingot', 1)</color>"
+card 238 as "Iron Ore"
+usecase 239 as "Miner Mk.2
+--
+<color $colors.yellow> Dico Index: ('Iron Ore', 0)</color>"
+node 240 as "Iron Mine"
+card 241 as "Copper Ore"
+usecase 242 as "Miner Mk.2
+--
+<color $colors.yellow> Dico Index: ('Copper Ore', 0)</color>"
+node 243 as "Copper Mine"
+usecase 244 as "Assembler
+--
+<color $colors.yellow> Dico Index: ('Reinforced Iron Plate', 1)</color>"
+card 245 as "Iron Plate"
+usecase 246 as "Assembler
+--
+<color $colors.yellow> Dico Index: ('Iron Plate', 0)</color>"
+card 247 as "Iron Ingot"
+usecase 248 as "Foundry
+--
+<color $colors.yellow> Dico Index: ('Iron Ingot', 1)</color>"
+card 249 as "Iron Ore"
+usecase 250 as "Miner Mk.2
+--
+<color $colors.yellow> Dico Index: ('Iron Ore', 0)</color>"
+node 251 as "Iron Mine"
+card 252 as "Copper Ore"
+usecase 253 as "Miner Mk.2
+--
+<color $colors.yellow> Dico Index: ('Copper Ore', 0)</color>"
+node 254 as "Copper Mine"
+card 255 as "Plastic"
+usecase 256 as "Refinery
+--
+<color $colors.yellow> Dico Index: ('Plastic', 0)</color>"
+storage 257 as "Heavy Oil Residue"
+card 258 as "Crude Oil"
+usecase 259 as "Oil Extractor
+--
+<color $colors.yellow> Dico Index: ('Crude Oil', 0)</color>"
+node 260 as "Oil Pool"
+card 261 as "Wire"
+usecase 262 as "Assembler
+--
+<color $colors.yellow> Dico Index: ('Wire', 0)</color>"
+card 263 as "Copper Ingot"
+usecase 264 as "Foundry
+--
+<color $colors.yellow> Dico Index: ('Copper Ingot', 0)</color>"
+card 265 as "Copper Ore"
+usecase 266 as "Miner Mk.2
+--
+<color $colors.yellow> Dico Index: ('Copper Ore', 0)</color>"
+node 267 as "Copper Mine"
+card 268 as "Iron Ore"
+usecase 269 as "Miner Mk.2
+--
+<color $colors.yellow> Dico Index: ('Iron Ore', 0)</color>"
+node 270 as "Iron Mine"
+card 271 as "Caterium Ingot"
+usecase 272 as "Smelter
+--
+<color $colors.yellow> Dico Index: ('Caterium Ingot', 0)</color>"
+card 273 as "Caterium Ore"
+usecase 274 as "Miner Mk.2
+--
+<color $colors.yellow> Dico Index: ('Caterium Ore', 0)</color>"
+node 275 as "Caterium Mine"
+usecase 276 as "Constructor
+--
+<color $colors.yellow> Dico Index: ('Wire', 1)</color>"
+card 277 as "Copper Ingot"
+usecase 278 as "Foundry
+--
+<color $colors.yellow> Dico Index: ('Copper Ingot', 0)</color>"
+card 279 as "Copper Ore"
+usecase 280 as "Miner Mk.2
+--
+<color $colors.yellow> Dico Index: ('Copper Ore', 0)</color>"
+node 281 as "Copper Mine"
+card 282 as "Iron Ore"
+usecase 283 as "Miner Mk.2
+--
+<color $colors.yellow> Dico Index: ('Iron Ore', 0)</color>"
+node 284 as "Iron Mine"
+usecase 285 as "Assembler
+--
+<color $colors.yellow> Dico Index: ('Reinforced Iron Plate', 2)</color>"
+card 286 as "Iron Plate"
+usecase 287 as "Assembler
+--
+<color $colors.yellow> Dico Index: ('Iron Plate', 0)</color>"
+card 288 as "Iron Ingot"
+usecase 289 as "Foundry
+--
+<color $colors.yellow> Dico Index: ('Iron Ingot', 1)</color>"
+card 290 as "Iron Ore"
+usecase 291 as "Miner Mk.2
+--
+<color $colors.yellow> Dico Index: ('Iron Ore', 0)</color>"
+node 292 as "Iron Mine"
+card 293 as "Copper Ore"
+usecase 294 as "Miner Mk.2
+--
+<color $colors.yellow> Dico Index: ('Copper Ore', 0)</color>"
+node 295 as "Copper Mine"
+card 296 as "Plastic"
+usecase 297 as "Refinery
+--
+<color $colors.yellow> Dico Index: ('Plastic', 0)</color>"
+storage 298 as "Heavy Oil Residue"
+card 299 as "Crude Oil"
+usecase 300 as "Oil Extractor
+--
+<color $colors.yellow> Dico Index: ('Crude Oil', 0)</color>"
+node 301 as "Oil Pool"
+card 302 as "Screw"
+usecase 303 as "Constructor
+--
+<color $colors.yellow> Dico Index: ('Screw', 0)</color>"
+card 304 as "Iron Ingot"
+usecase 305 as "Foundry
+--
+<color $colors.yellow> Dico Index: ('Iron Ingot', 1)</color>"
+card 306 as "Iron Ore"
+usecase 307 as "Miner Mk.2
+--
+<color $colors.yellow> Dico Index: ('Iron Ore', 0)</color>"
+node 308 as "Iron Mine"
+card 309 as "Copper Ore"
+usecase 310 as "Miner Mk.2
+--
+<color $colors.yellow> Dico Index: ('Copper Ore', 0)</color>"
+node 311 as "Copper Mine"
+usecase 312 as "Constructor
+--
+<color $colors.yellow> Dico Index: ('Screw', 1)</color>"
+card 313 as "Iron Rod"
+usecase 314 as "Constructor
+--
+<color $colors.yellow> Dico Index: ('Iron Rod', 0)</color>"
+card 315 as "Iron Ingot"
+usecase 316 as "Foundry
+--
+<color $colors.yellow> Dico Index: ('Iron Ingot', 1)</color>"
+card 317 as "Iron Ore"
+usecase 318 as "Miner Mk.2
+--
+<color $colors.yellow> Dico Index: ('Iron Ore', 0)</color>"
+node 319 as "Iron Mine"
+card 320 as "Copper Ore"
+usecase 321 as "Miner Mk.2
+--
+<color $colors.yellow> Dico Index: ('Copper Ore', 0)</color>"
+node 322 as "Copper Mine"
+1-->0: 1
+113-->0: 1
+2-->1: 10.0
+60-->1: 9.0
+86-->1: 18.0
+92-->1: 52.0
+3-->2: 10.0
+31-->2: 10.0
+4-->3: 22.0
+26-->3: 22.0
+5-->4: 22.0
+17-->4: 22.0
+6-->5: 22.0
+14-->5: 22.0
+7-->6
+8-->7: 11.0
+11-->7: 5.5
+9-->8
+10-->9: 0.09
+12-->11
+13-->12: 0.05
+15-->14
+16-->15: 0.18
+18-->17: 44.0
+19-->18
+20-->19: 22.0
+23-->19: 11.0
+21-->20
+22-->21: 0.18
+24-->23
+25-->24: 0.09
+27-->26
+28-->27: 13.2
+29-->28
+30-->29: 0.11
+32-->31: 20.0
+54-->31: 40.0
+33-->32: 20.0
+45-->32: 20.0
+34-->33: 20.0
+42-->33: 20.0
+35-->34
+36-->35: 10.0
+39-->35: 5.0
+37-->36
+38-->37: 0.08
+40-->39
+41-->40: 0.04
+43-->42
+44-->43: 0.17
+46-->45: 40.0
+47-->46
+48-->47: 20.0
+51-->47: 10.0
+49-->48
+50-->49: 0.17
+52-->51
+53-->52: 0.08
+55-->54
+55-->56: 20.0
+55-->56: 20.0
+57-->55: 60.0
+58-->57
+59-->58: 0.5
+61-->60
+62-->61: 18.0
+63-->62: 18.0
+77-->62: 18.0
+64-->63: 2.4
+72-->63: 0.6
+65-->64
+66-->65: 1.2
+69-->65: 0.6
+67-->66
+68-->67: 0.01
+70-->69
+71-->70: 0.01
+73-->72
+74-->73: 1.8
+75-->74
+76-->75: 0.02
+78-->77: 9.0
+79-->78
+80-->79: 4.5
+83-->79: 2.25
+81-->80
+82-->81: 0.04
+84-->83
+85-->84: 0.02
+87-->86
+87-->88: 9.0
+87-->88: 9.0
+89-->87: 27.0
+90-->89
+91-->90: 0.23
+93-->92: 52.0
+102-->92: 52.0
+94-->93: 13.0
+95-->94
+96-->95: 5.2
+99-->95: 5.2
+97-->96
+98-->97: 0.04
+100-->99
+101-->100: 0.04
+103-->102: 13.0
+104-->103
+105-->104: 13.0
+106-->105
+107-->106: 5.2
+110-->106: 5.2
+108-->107
+109-->108: 0.04
+111-->110
+112-->111: 0.04
+114-->113: 2.67
+172-->113: 1.0
+115-->114: 2.67
+143-->114: 2.67
+116-->115: 5.87
+138-->115: 5.87
+117-->116: 5.87
+129-->116: 5.87
+118-->117: 5.87
+126-->117: 5.87
+119-->118
+120-->119: 2.93
+123-->119: 1.47
+121-->120
+122-->121: 0.02
+124-->123
+125-->124: 0.01
+127-->126
+128-->127: 0.05
+130-->129: 11.73
+131-->130
+132-->131: 5.87
+135-->131: 2.93
+133-->132
+134-->133: 0.05
+136-->135
+137-->136: 0.02
+139-->138
+140-->139: 3.52
+141-->140
+142-->141: 0.03
+144-->143: 5.33
+166-->143: 10.67
+145-->144: 5.33
+157-->144: 5.33
+146-->145: 5.33
+154-->145: 5.33
+147-->146
+148-->147: 2.67
+151-->147: 1.33
+149-->148
+150-->149: 0.02
+152-->151
+153-->152: 0.01
+155-->154
+156-->155: 0.04
+158-->157: 10.67
+159-->158
+160-->159: 5.33
+163-->159: 2.67
+161-->160
+162-->161: 0.04
+164-->163
+165-->164: 0.02
+167-->166
+167-->168: 5.33
+167-->168: 5.33
+169-->167: 16.0
+170-->169
+171-->170: 0.13
+173-->172
+174-->173: 18.0
+179-->173: 14.0
+205-->173: 2.5
+175-->174
+176-->175: 30.0
+177-->176
+178-->177: 0.25
+180-->179
+181-->180: 28.0
+182-->181: 28.0
+196-->181: 28.0
+183-->182: 3.73
+191-->182: 0.93
+184-->183
+185-->184: 1.87
+188-->184: 0.93
+186-->185
+187-->186: 0.02
+189-->188
+190-->189: 0.01
+192-->191
+193-->192: 2.8
+194-->193
+195-->194: 0.02
+197-->196: 14.0
+198-->197
+199-->198: 7.0
+202-->198: 3.5
+200-->199
+201-->200: 0.06
+203-->202
+204-->203: 0.03
+206-->205: 2.5
+244-->205: 2.5
+285-->205: 2.5
+207-->206: 15.0
+223-->206: 41.67
+208-->207
+209-->208: 10.0
+217-->208: 2.0
+210-->209
+211-->210: 4.0
+214-->210: 4.0
+212-->211
+213-->212: 0.03
+215-->214
+216-->215: 0.03
+218-->217
+218-->219: 1.0
+218-->219: 1.0
+220-->218: 3.0
+221-->220
+222-->221: 0.03
+224-->223: 41.67
+233-->223: 41.67
+225-->224: 10.42
+226-->225
+227-->226: 4.17
+230-->226: 4.17
+228-->227
+229-->228: 0.03
+231-->230
+232-->231: 0.03
+234-->233: 10.42
+235-->234
+236-->235: 10.42
+237-->236
+238-->237: 4.17
+241-->237: 4.17
+239-->238
+240-->239: 0.03
+242-->241
+243-->242: 0.03
+245-->244: 8.33
+261-->244: 16.67
+246-->245
+247-->246: 5.56
+255-->246: 1.11
+248-->247
+249-->248: 2.22
+252-->248: 2.22
+250-->249
+251-->250: 0.02
+253-->252
+254-->253: 0.02
+256-->255
+256-->257: 0.56
+256-->257: 0.56
+258-->256: 1.67
+259-->258
+260-->259: 0.01
+262-->261: 16.67
+276-->261: 16.67
+263-->262: 2.22
+271-->262: 0.56
+264-->263
+265-->264: 1.11
+268-->264: 0.56
+266-->265
+267-->266: 0.01
+269-->268
+270-->269: 0.0
+272-->271
+273-->272: 1.67
+274-->273
+275-->274: 0.01
+277-->276: 8.33
+278-->277
+279-->278: 4.17
+282-->278: 2.08
+280-->279
+281-->280: 0.03
+283-->282
+284-->283: 0.02
+286-->285: 15.0
+302-->285: 30.0
+287-->286
+288-->287: 10.0
+296-->287: 2.0
+289-->288
+290-->289: 4.0
+293-->289: 4.0
+291-->290
+292-->291: 0.03
+294-->293
+295-->294: 0.03
+297-->296
+297-->298: 1.0
+297-->298: 1.0
+299-->297: 3.0
+300-->299
+301-->300: 0.03
+303-->302: 30.0
+312-->302: 30.0
+304-->303: 7.5
+305-->304
+306-->305: 3.0
+309-->305: 3.0
+307-->306
+308-->307: 0.03
+310-->309
+311-->310: 0.03
+313-->312: 7.5
+314-->313
+315-->314: 7.5
+316-->315
+317-->316: 3.0
+320-->316: 3.0
+318-->317
+319-->318: 0.03
+321-->320
+322-->321: 0.03
+legend
+Number of possibilities: 64
+endlegend
+@enduml

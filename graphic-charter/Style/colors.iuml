@@ -1,0 +1,11 @@
+!$colors = {
+    "orange"        : "#eca54e",
+    "light_orange"  : "#f3c98d",
+    "blue"          : "#5bb0c5",
+    "light_blue"    : "#a2f0f5",
+    "red"           : "#a31d22",
+    "grey"          : "#474a55",
+    "yellow"        : "#ffff00",
+    "green"         : "#6a9058",
+    "purple"        : "#692787"
+}

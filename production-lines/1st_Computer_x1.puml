@@ -1,0 +1,128 @@
+@startuml
+!include ../graphic-charter/opti_factory_style.iuml
+usecase 52 as "0.36 Assembler
+(5.33 W)"
+card 53 as "Circuit Board"
+card 70 as "Crystal Oscillator"
+usecase 54 as "0.21 Assembler
+(3.2 W)"
+card 55 as "Copper Sheet"
+card 65 as "Silica"
+usecase 56 as "0.59 Constructor
+(2.35 W)"
+card 57 as "Copper Ingot"
+usecase 66 as "0.16 Constructor
+(0.63 W)"
+card 67 as "Raw Quartz"
+usecase 71 as "1.0 Manufacturer
+(55.0 W)"
+card 72 as "Quartz Crystal"
+card 77 as "Cable"
+card 94 as "Reinforced Iron Plat"
+usecase 73 as "0.8 Constructor
+(3.2 W)"
+card 74 as "Raw Quartz"
+usecase 75 as "0.28 Miner Mk.2
+(3.35 W)"
+node 76 as "Quartz Mine"
+usecase 78 as "0.47 Constructor
+(1.87 W)"
+card 79 as "Wire"
+usecase 82 as "0.18 Foundry
+(2.83 W)"
+card 83 as "Copper Ore"
+card 86 as "Iron Ore"
+usecase 84 as "0.09 Miner Mk.2
+(1.11 W)"
+node 85 as "Copper Mine"
+usecase 87 as "0.06 Miner Mk.2
+(0.66 W)"
+node 88 as "Iron Mine"
+usecase 95 as "0.44 Assembler
+(6.67 W)"
+card 96 as "Iron Plate"
+card 112 as "Wire"
+usecase 97 as "0.11 Assembler
+(1.67 W)"
+card 98 as "Iron Ingot"
+card 106 as "Plastic"
+usecase 99 as "0.11 Foundry
+(1.78 W)"
+card 100 as "Iron Ore"
+card 103 as "Copper Ore"
+usecase 107 as "0.06 Refinery
+(1.67 W)"
+storage 108 as "Heavy Oil Residue"
+card 109 as "Crude Oil"
+usecase 110 as "0.01 Oil Extractor
+(0.56 W)"
+node 111 as "Oil Pool"
+usecase 113 as "0.5 Assembler
+(7.44 W)"
+card 114 as "Copper Ingot"
+card 122 as "Caterium Ingot"
+usecase 123 as "0.1 Smelter
+(0.4 W)"
+card 124 as "Caterium Ore"
+usecase 125 as "0.04 Miner Mk.2
+(0.45 W)"
+node 126 as "Caterium Mine"
+card 0 as "Computer"
+53-->52: 2.67
+70-->52: 1.0
+54-->53
+71-->70
+55-->54: 5.87
+65-->54: 5.87
+56-->55
+66-->65
+57-->56: 11.73
+82-->57
+67-->66: 3.52
+75-->67
+72-->71: 18.0
+77-->71: 14.0
+94-->71: 2.5
+73-->72
+78-->77
+95-->94
+74-->73: 30.0
+75-->74
+76-->75: 0.28
+79-->78: 28.0
+113-->79
+83-->82: 8.84
+86-->82: 4.42
+84-->83
+87-->86
+85-->84: 0.09
+88-->87: 0.06
+96-->95: 8.33
+112-->95: 16.67
+97-->96
+113-->112
+98-->97: 5.56
+106-->97: 1.11
+99-->98
+107-->106
+100-->99: 2.22
+103-->99: 2.22
+87-->100
+84-->103
+107-->108: 0.56
+109-->107: 1.67
+110-->109
+111-->110: 0.01
+114-->113: 5.96
+122-->113: 1.49
+82-->114
+123-->122
+124-->123: 4.47
+125-->124
+126-->125: 0.04
+52-->0: 1
+legend
+Total Number of Machines: 5.55
+Total Power required: 100.15 W
+endlegend
+@enduml
