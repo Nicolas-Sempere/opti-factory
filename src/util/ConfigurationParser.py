@@ -14,15 +14,8 @@ DEFAULT_CONFIGURATION = {
 }
 
 
+# Migth serve a purpose in the future
 def isConfigurationLegal(configuration):
-    number_of_production_lines = configuration["number_of_production_lines"]
-    if number_of_production_lines > 10:
-        print(
-            "Error: the maximum number of production lines is 10,",
-            number_of_production_lines,
-            "was given.",
-        )
-        return False
     return True
 
 
